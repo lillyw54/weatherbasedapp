@@ -19,7 +19,3 @@ on git hub repository website team-mate will review the code and allow code to b
 
 if accepted continue repeat step1 <especially for team-mates commited code>
 
-<<<<<<< HEAD
-CLOUD REPOSITORY (GITHUB)
-=======
->>>>>>> 484532efce42cd7648125f4d7ac5c659ddeeacfd
