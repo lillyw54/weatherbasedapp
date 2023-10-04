@@ -1,0 +1,9 @@
+header {
+    background-color: #615a5a;
+    text-align: center;
+    padding: 30px;
+  }
+
+.card{
+    border-style: double;
+}
