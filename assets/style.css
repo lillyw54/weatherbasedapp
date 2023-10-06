@@ -1,11 +1,19 @@
 header {
-    background-color: #615a5a;
+    
     text-align: center;
-    padding: 30px;
+    font-size: 30px;
+    padding: 40px;
   }
 
 
+  .card-container {
+    display: flex;
+    justify-content: space-between; 
+  }
 
-body{
- text-align: center; 
-}
+  .card {
+    width: 300px; 
+    display: block;
+  }
+
+  

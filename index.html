@@ -12,30 +12,21 @@
 
 <header>
     <h1>Weather Jamz</h1>
-    <h2>Weather Jamz is an application that helps you choose a song based on your locations weather</h2>
 </header>
 
+
+</style>
 <!--Weather Search Container-->
 <div class="input-group" style="width:1200px">
   <form id="formCity">
-<<<<<<< HEAD
-    <input name="city" id="city" type="text" autofocus="true" placeholder="Search your city" class="form-input" style="width:1200px"/>
-      <button type="submit" class="btn-success"> Search <i class="fas fa-search"></i></button>
-=======
     <input name="city" id="searchInput" type="text" autofocus="true" placeholder="Search your city" class="form-input" style="width:1200px" />
     <button id="searchButton" type="submit" class="btn-success" style="margin-right:0px"> Search <i class="fas fa-search"></i></button>
->>>>>>> 1df1f682e0b1aa174f390a1d0d87238d8c4f233f
        </form>
  </div>
 
  <!--Weather Card-->
-<<<<<<< HEAD
- <div class="col-sm-9" id="weather-today"><br><br>
-  <h3>Today's Weather</h3>
-=======
  <div class="col-sm-9" style="text-align:center;margin-left:20%"><br><br>
   <h3 style="margin-right:30%">Today's Weather</h3>
->>>>>>> 1df1f682e0b1aa174f390a1d0d87238d8c4f233f
   <div class="row">
      <div class="col-sm-9">
         <div id="weatherContainer" class="card todayBlock">
@@ -48,37 +39,65 @@
      </div>
   </div>
 
+
+
  
- <!--Music Container-->
+ <!--Music Container using bulma-->
+ <div class="col-sm-9" style="text-align:center;margin-right:50%"><br><br>
  <div class="card">
   <div class="card-content">
     <div class="media">
-      <div class="media-left">
-        <figure class="image is-48x48">
-          <img src="./images/rockband.jpg" alt="Placeholder image">
-        </figure>
-      </div>
       <div class="media-content">
-        <p class="title is-4">Card title</p>
-        <p class="subtitle is-6">Card subtitle</p>
+        <p class="title is-4">Song Title</p>
+        <p class="subtitle is-6">Artist Name</p>
       </div>
     </div>
-
     <div class="content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+      Album Name
     </div>
+    <button class="button is-primary">Like</button>
   </div>
 </div>
 
- <!--Liked Music-->
- <div>
-    <h2>Liked genres</h2>
- </div>
+<!-- Liked Music List-->
+<h2>Liked Music</h2>
+<ul id="liked-music-list"></ul>
 
-<!--Contact Info-->
-<footer>
+
+<!--Contact Info using bulma-->
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <p class="title">David De La Rosa</p>
+            <a href="https://github.com/daviddelarosa210" class="card-link">https://github.com/daviddelarosa210</a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <p class="title">Elizabeth Wheat</p>
+            <a href="https://github.com/lillyw54" class="card-link">https://github.com/lillyw54</a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <p class="title">Bijan Olfati</p>
+            <a href="https://github.com/bolfati" class="card-link">https://github.com/bolfati</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
     
 </footer>
 <script type="text/javascript" src="assets/script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
 </body>
 </html>
