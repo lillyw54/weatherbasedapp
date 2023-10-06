@@ -1,11 +1,3 @@
-var apiUrl= 'https://api.openweathermap.org/data/2.5/weather?q=' + encodedCityName + '&appid=fec6f8cea37f79992e917dea61f6b1a6';
-var apiKey= 'fec6f8cea37f79992e917dea61f6b1a6';
-
-var encodedCityName = encodeURIComponent(cityName);
-var cityName = inputElement.val();
-var inputElement = $("#searchInput");
-
-
 var spotifyUrl = 'https://accounts.spotify.com/api/token';
 var headers = {
   'Content-Type': 'application/x-www-form-urlencoded'
