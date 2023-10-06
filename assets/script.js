@@ -6,9 +6,9 @@ window.addEventListener("DOMContentLoaded", function() {
     if (temperature >= 30) {
       return "4Z8W4fKeB5YxbusRsdQVPb";
     } else if (temperature >= 20) {
-      return "Pop";
+      return "7FBcuc1gsnv6Y1nwFtNRCb";
     } else if (temperature >= 10) {
-      return "Hip Hop";
+      return "2iEvnFsWxR0Syqu2JNopAd";
     } else {
       return "Classical";
     }
@@ -80,12 +80,6 @@ var headers = {
 };
 var spotifyData = 'grant_type=client_credentials&client_id=a053bd798ca34bea8a7d671eba17b396&client_secret=85e76203126d455fbc7b336103339c4a';
 
-var spotifyUrl = 'https://accounts.spotify.com/api/token';
-var headers = {
-  'Content-Type': 'application/x-www-form-urlencoded'
-};
-var spotifyData = 'grant_type=client_credentials&client_id=a053bd798ca34bea8a7d671eba17b396&client_secret=85e76203126d455fbc7b336103339c4a';
-
 fetch(spotifyUrl, {
   method: 'POST',
   headers: headers,
@@ -98,8 +92,8 @@ fetch(spotifyUrl, {
     var accessToken = data.access_token;
     console.log(accessToken);
     console.log(data);
-
-    var spotifyUrl = 'https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb';
+    
+    var spotifyUrl = 'https://api.spotify.com/v1/artists?ids=7FBcuc1gsnv6Y1nwFtNRCb%2C2iEvnFsWxR0Syqu2JNopAd%2C67qogtRNI0GjUr8PlaG6Zh';
     var headers = {
       'Authorization': `Bearer ${accessToken}`
     };
@@ -112,6 +106,7 @@ fetch(spotifyUrl, {
       })
       .then(function(data) {
         console.log(data);
+        
       })
       .catch(function(error) {
         console.error(error);
