@@ -18,17 +18,27 @@
 <!--Weather Search Container-->
 <div class="input-group" style="width:1200px">
   <form id="formCity">
+<<<<<<< HEAD
     <input name="city" id="city" type="text" autofocus="true" placeholder="Search your city" class="form-input" style="width:1200px"/>
       <button type="submit" class="btn-success"> Search <i class="fas fa-search"></i></button>
+=======
+    <input name="city" id="searchInput" type="text" autofocus="true" placeholder="Search your city" class="form-input" style="width:1200px" />
+    <button id="searchButton" type="submit" class="btn-success" style="margin-right:0px"> Search <i class="fas fa-search"></i></button>
+>>>>>>> 1df1f682e0b1aa174f390a1d0d87238d8c4f233f
        </form>
  </div>
 
  <!--Weather Card-->
+<<<<<<< HEAD
  <div class="col-sm-9" id="weather-today"><br><br>
   <h3>Today's Weather</h3>
+=======
+ <div class="col-sm-9" style="text-align:center;margin-left:20%"><br><br>
+  <h3 style="margin-right:30%">Today's Weather</h3>
+>>>>>>> 1df1f682e0b1aa174f390a1d0d87238d8c4f233f
   <div class="row">
      <div class="col-sm-9">
-        <div class="card todayBlock">
+        <div id="weatherContainer" class="card todayBlock">
            <h4> <span id="searchedCity"></span></h4>
        <h5><span id="todayDate"></span></h5>
        <p><strong>Temperature: </strong><span id="todayTemp"></span> °F</p>
