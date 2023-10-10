@@ -1,7 +1,22 @@
 window.addEventListener("DOMContentLoaded", function() {
   var inputElement = document.querySelector("#searchInput");
   var weatherContainer = document.querySelector("#weatherContainer");
+  var likedMusicList = document.getElementById('liked-music-list');
 
+  // Retrieve the saved list items from local storage
+  var likedMusic = localStorage.getItem('likedMusic');
+  if (likedMusic) {
+    likedMusic = JSON.parse(likedMusic);
+  } else {
+    likedMusic = [];
+  }
+
+  // Display the saved list items on the screen
+  likedMusic.forEach(function(item) {
+    var listItem = document.createElement('li');
+    listItem.textContent = item;
+    likedMusicList.appendChild(listItem);
+  });
   function getGenreByTemperature(temperature) {
     if (temperature >= 30) {
       return "7FBcuc1gsnv6Y1nwFtNRCb";
@@ -74,7 +89,9 @@ window.addEventListener("DOMContentLoaded", function() {
               .then(function(data) {
                 console.log(data);
 
-                var apiArray = data.artists; // Assuming data.artists is the correct array
+                var apiArray = data.artists; 
+
+                var apiArray = data.artists; 
 
                 if (Array.isArray(apiArray) && apiArray.length > 0) {
                 var randomIndex = Math.floor(Math.random() * apiArray.length);
@@ -85,21 +102,30 @@ window.addEventListener("DOMContentLoaded", function() {
                 } else {
                   console.log("The artists array is empty or undefined.");
                 }
-
-                var likeButton = document.getElementById('like-button');
+var likeButton = document.getElementById('like-button');
                 var likedMusicList = document.getElementById('liked-music-list');
 
-                likeButton.addEventListener('click', function() { 
+                likeButton.addEventListener('click', function() {
                   var songTitle = document.querySelector('.title').textContent;
                   var artistName = document.querySelector('.subtitle').textContent;
-  
-  // Create a new list item
-  var listItem = document.createElement('li');
+
+                  // Create a new list item
+                  var listItem = document.createElement('li');
                   listItem.textContent = `${songTitle} - ${artistName}`;
-  
-  // Append the list item to the liked music list
+
+                  // Append the list item to the liked music list
                   likedMusicList.appendChild(listItem);
-                  });
+
+                  // Save the list items to local storage
+                  var likedMusic = localStorage.getItem('likedMusic');
+                  if (likedMusic) {
+                    likedMusic = JSON.parse(likedMusic);
+                  } else {
+                    likedMusic = [];
+                  }
+                  likedMusic.push(`${songTitle} - ${artistName}`);
+                  localStorage.setItem('likedMusic', JSON.stringify(likedMusic));
+                });
               })
               .catch(function(error) {
                 console.error(error);
@@ -116,4 +142,5 @@ window.addEventListener("DOMContentLoaded", function() {
 
   var searchForm = document.querySelector("#formCity");
   searchForm.addEventListener("submit", handleSearch);
+  var likeButton = document.getElementById('like-button')
 });
