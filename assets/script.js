@@ -76,8 +76,6 @@ window.addEventListener("DOMContentLoaded", function() {
 
                 var apiArray = data.artists; // Assuming data.artists is the correct array
 
-                var apiArray = data.artists; // Assuming data.artists is the correct array
-
                 if (Array.isArray(apiArray) && apiArray.length > 0) {
                 var randomIndex = Math.floor(Math.random() * apiArray.length);
                 var randomArtist = apiArray[randomIndex];
