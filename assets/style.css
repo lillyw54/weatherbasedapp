@@ -1,36 +1,35 @@
-<<<<<<< HEAD
-/* Set the background color for the body */
-body {
-  background-color: f2f2f2;
-}
-
 /* Style the header */
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: transparent;
+  color: #ccc;
   padding: 40px;
   text-align: center;
   font-size: 45px;
+  width: 1500px;
 }
 
-/* search bar background*/
+body {
+  background: linear-gradient(to bottom, #000000, #8f3e3e, #e40f0f);
+}
+
+/* Search bar background */
 .input-group {
   margin-top: 20px;
   text-align: center;
 }
 
-/* search bar input */
+/* Search bar input */
 #searchInput {
   padding: 10px;
   width: 100%;
   max-width: 400px;
 }
 
-/* search button */
+/* Search button */
 #searchButton {
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #537e5c;
+  background-color: #7a4b4b;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -40,41 +39,38 @@ header {
 /* Style the weather container */
 #weatherContainer {
   padding: 30px;
-  background-color: #fff;
+  background-color: transparent;
+  color: #ccc;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 1500px;
 }
 
 /* Style the music container */
 .card-content {
   padding: 20px;
-  background-color: #fff;
+  background-color: transparent;
+  color: #ccc;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-size: smaller;
 }
-
 
 /* Style the liked music list */
 #liked-music-list {
   margin-top: 40px;
   list-style: none;
   padding: 45px;
-  background-color: #fff;
+  background-color: transparent;
+  color: #ccc;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Style the footer */
 .footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+  background-color: transparent;
+  color: #ccc;
   text-align: center;
 }
 
-.h3{
+.h3 {
   font-size: 50px;
 }
-=======
->>>>>>> main
