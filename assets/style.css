@@ -1,35 +1,30 @@
 /* Style the header */
 header {
-  background-color: transparent;
-  color: #ccc;
+  background-color: #333;
+  color: #fff;
   padding: 40px;
   text-align: center;
   font-size: 45px;
-  width: 1500px;
 }
 
-body {
-  background: linear-gradient(to bottom, #000000, #8f3e3e, #e40f0f);
-}
-
-/* Search bar background */
+/* search bar background*/
 .input-group {
   margin-top: 20px;
   text-align: center;
 }
 
-/* Search bar input */
+/* search bar input */
 #searchInput {
   padding: 10px;
   width: 100%;
   max-width: 400px;
 }
 
-/* Search button */
+/* search button */
 #searchButton {
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #7a4b4b;
+  background-color: #537e5c;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -39,18 +34,17 @@ body {
 /* Style the weather container */
 #weatherContainer {
   padding: 30px;
-  background-color: transparent;
-  color: #ccc;
+  background-color: #fff;
   border-radius: 4px;
-  width: 1500px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Style the music container */
 .card-content {
   padding: 20px;
-  background-color: transparent;
-  color: #ccc;
+  background-color: #fff;
   border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-size: smaller;
 }
 
@@ -59,15 +53,16 @@ body {
   margin-top: 40px;
   list-style: none;
   padding: 45px;
-  background-color: transparent;
-  color: #ccc;
+  background-color: #fff;
   border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Style the footer */
 .footer {
-  background-color: transparent;
-  color: #ccc;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
   text-align: center;
 }
 
