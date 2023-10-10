@@ -1,123 +1,77 @@
-/* Reset default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body styles */
+/* Set the background color for the body */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: f2f2f2;
 }
 
-/* Header styles */
+/* Style the header */
 header {
   background-color: #333;
   color: #fff;
   padding: 40px;
   text-align: center;
+  font-size: 45px;
 }
 
-header h1 {
-  font-size: 24px;
-}
-
-/* Weather Search Container styles */
+/* search bar background*/
 .input-group {
   margin-top: 20px;
   text-align: center;
 }
 
-.form-input {
+/* search bar input */
+#searchInput {
   padding: 10px;
-  border: 1px solid #111111;
-  border-radius: 4px;
   width: 100%;
   max-width: 400px;
 }
 
+/* search button */
 #searchButton {
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #303531;
+  background-color: #537e5c;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-/* Weather Card styles */
-.todayBlock {
-
-
+/* Style the weather container */
+#weatherContainer {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.todayBlock h4 {
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-
-.todayBlock h5 {
-  font-size: 16px;
-  color: #888;
-  margin-bottom: 10px;
-}
-
-.todayBlock p {
-  margin-bottom: 5px;
-}
-
-/* Music Container styles */
+/* Style the music container */
 .card-content {
   padding: 20px;
-}
-
-.media-content {
-  text-align: center;
-}
-
-.title.is-4 {
-  font-size: 20px;
-  margin-bottom: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: smaller;
 }
 
 
-.content {
-  margin-bottom: 10px;
-}
-
-.button.is-primary {
-  margin-top: 10px;
-}
-
-/* Liked Music List styles */
+/* Style the liked music list */
 #liked-music-list {
-  margin-top: 20px;
+  margin-top: 40px;
   list-style: none;
+  padding: 45px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
-.footer .column {
-  margin-bottom: 20px;
-}
-
-.footer .card {
+/* Style the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
   padding: 20px;
-}
-
-.footer .card-content {
   text-align: center;
 }
 
-.footer .title {
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-.footer .card-link {
-  color: #070505;
-  text-decoration: none;
-  display: block;
-  margin-top: 10px;
+.h3{
+  font-size: 50px;
 }
