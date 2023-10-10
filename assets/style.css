@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 /* Set the background color for the body */
 body {
   background-color: f2f2f2;
 }
 
+=======
+>>>>>>> main
 /* Style the header */
 header {
   background-color: #333;
@@ -53,7 +56,6 @@ header {
   font-size: smaller;
 }
 
-
 /* Style the liked music list */
 #liked-music-list {
   margin-top: 40px;
@@ -72,6 +74,10 @@ header {
   text-align: center;
 }
 
-.h3{
+.h3 {
   font-size: 50px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main
